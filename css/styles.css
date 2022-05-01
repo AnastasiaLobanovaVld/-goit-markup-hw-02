@@ -5,33 +5,40 @@
     Colors
     ----------------------------
     */
+    --primary-black-color: #212121;
     --primary-white-color: #FFFFFF;
     --primary-grey-color: #757575;
     --logo-text-color: #000000;
-    --logo-and-accent-color: #2196F3;
-    --hero-footer-background-color: #2F303A;
+    --logo-color: #2196F3;
+    --accent-color: #2196F3;
+    --background-blue-color: #2196F3;
+    --hero-background-color: #2F303A;
+    --footer-background-color: #2F303A;
+    --portfolio-background-color: #F5F4FA;
+    --btn-background-color: #F5F4FA;
     --address-links-color: rgba(255, 255, 255, 0.6);
-    --portfolio-btn-background-color: #F5F4FA;
 
     /*
     ----------------------------
     Font-size
     ----------------------------
     */
+    --page-text-font-size: 14px;
     --logo-font-size: 26px;
-    --hero-title-size: 44px;
-    --titles-size: 36px;
+    --hero-title-font-size: 44px;
+    --titles-font-size: 36px;
     --team-font-size: 16px;
     --btn-font-size: 16px;
-    --portfolio-text-size: 16px;
-    --portfolio-title-size: 18px;
+    --portfolio-text-font-size: 16px;
+    --portfolio-title-font-size: 18px;
 
     /*
     ----------------------------
     Font-family
     ----------------------------
     */
-    --secondary-font-family: 'Raleway';
+    --primary-font-famili: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
 
     /*
     ----------------------------
@@ -47,6 +54,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #212121;
+    text-decoration: none;
 }
 .list {
     list-style: none;
@@ -60,17 +68,17 @@ body {
     font-size: var(--logo-font-size);
     line-height: 1.38;
     letter-spacing: 0.03em;
-    color: var(--logo-and-accent-color);
+    text-decoration: none;
+    color: var(--logo-color);
 }  
 .header-span{
     color: var(--logo-text-color);
 }
 .header-link{
-    font-family: inherit;
     font-weight: var(--medium-font-weight);
-    font-size: inherit;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: currentColor;
 }
 .header-link.address {
@@ -81,34 +89,29 @@ body {
 .header-link:focus,
 .header-link.address:hover,
 .header-link.address:focus {
-    color: var(--logo-and-accent-color);
+    color: var(--accent-color);
 }
 
 /* HERO */
 .hero-section {
-    background-color: var(--hero-footer-background-color);
+    background-color: var(--hero-background-color);
 }
 .hero-title {
-    font-family: inherit;
     font-weight: var(--black-font-weight);
-    font-size: var(--hero-title-size);
+    font-size: var(--hero-title-font-size);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:var(--primary-white-color);
 }
 .hero-btn {
-    font-family: inherit;
     font-weight: var(--bold-font-weight);
     font-size: var(--btn-font-size);
+    font-family: inherit;
     line-height: 1.87;
-    /* identical to box height, or 188% */
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color:var(--primary-white-color);
-    background-color:var(--logo-and-accent-color);
+    background-color:var(--background-blue-color);
     cursor: pointer;
 }
 /* Why-we-section */
@@ -125,33 +128,27 @@ body {
     margin: -1px;
 }
 .why-we-title {
-    font-family: inherit;
     font-weight: var(--bold-font-weight);
-    font-size: inherit;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: currentColor;
 }
 .why-we-text {
-    font-family: inherit;
-    font-size: inherit;
     line-height: 1.71; 
     letter-spacing: 0.03em;
     color: var(--primary-grey-color);
 }
 /* Work-section */
-.work-main-title 
+.work-main-title,
 .team-main-title {
-    font-family: inherit;
     font-weight: var(--bold-font-weight);
-    font-size: var(--titles-size);
+    font-size: var(--titles-font-size);
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: currentColor;
 }
 .team-title {
-    font-family: inherit;
     font-weight: var(--medium-font-weight);
     font-size: var(--team-font-size);
     line-height: 1.18;
@@ -159,7 +156,6 @@ body {
     color: currentColor;
 }
 .team-text {
-    font-family: inherit;
     font-size: var(--team-font-size);
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -167,33 +163,31 @@ body {
 }
 /* FOOTER */
 footer {
-    background-color: var(--hero-footer-background-color);
+    background-color: var(--footer-background-color);
 }
 .footer-span {
     color: var(--primary-white-color);
 }
 .footer-link {
-    font-family: inherit;
-    font-size: inherit;
+    font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    text-decoration: none;
     color: var(--primary-white-color);
 }
 .footer-link.address {
     color: var(--address-links-color);
 }
 .footer-link:hover,
-.footer-link:focus,
-.footer-link.address:hover,
-.footer-link.address:focus {
-    color: var(--logo-and-accent-color);
+.footer-link:focus {
+    color: var(--accent-color);
 }
 
 /* PORTFOLIO */
 .works-btn {
-    font-family: inherit;
     font-weight: var(--medium-font-weigh);
     font-size: var(--btn-font-size);
+    font-family: inherit;
     line-height: 1.62;
     letter-spacing: 0.03em; 
     color: currentColor;
@@ -203,19 +197,18 @@ footer {
 .works-btn:focus,
 .works-btn.current {
     color: var(--primary-white-color);
-    background-color: var(--logo-and-accent-color);
+    background-color: var(--background-blue-color);
 }
-.works-title {
-    font-family: inherit;
+.works-link {
     font-weight: var(--bold-font-weight);
-    font-size: var(--portfolio-title-size);
+    font-size: var(--portfolio-title-font-size);
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121; /* currentColor does not work in this case =( */
+    color: currentColor;
+    text-decoration: none;
 }
 .works-text {
-    font-family: inherit;
-    font-size: var(--portfolio-text-size);
+    font-size: var(--portfolio-text-font-size);
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--primary-grey-color);
